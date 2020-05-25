@@ -33,10 +33,10 @@ public class PandaApplicationSeleniumTest {
 
         // Tworzymy nową instancję Firefoxa
         // driver = new FirefoxDriver(capabilities);
-        driver = new RemoteWebDriver(new URL("http://selenium-hub:4444/wd/hub"), capabilities);
+        driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
         // Otwieramy stronę
         // Pamiętaj, że aplikacja Spring musi działać! To znaczy też musi być włączona.
-        driver.get("http://127.18.0.3:8080/");
+        driver.get("http://localhost:8080/");
         // Wyświetlamy informacje, że udało się otwozyć stronę
         System.out.println("Successfully opened the website");
         //Czekamy 2 sekundy
